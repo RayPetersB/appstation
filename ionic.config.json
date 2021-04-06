@@ -1,0 +1,8 @@
+{
+  "name": "appstation",
+  "app_id": "b42e64d2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
