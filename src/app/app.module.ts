@@ -10,6 +10,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {GameServiceProvider} from "../providers/game-service/game-service";
+import { DialogInputServiceProvider } from '../providers/dialog-input-service/dialog-input-service';
+// import { SocialSharing } from '@ionic-native/social-sharing';
+// import { HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    DialogInputServiceProvider, GameServiceProvider,
+    // SocialSharing
   ]
 })
 export class AppModule {}
