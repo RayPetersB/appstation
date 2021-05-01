@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { GameServiceProvider } from '../../providers/game-service/game-service';
 import { AlertController } from 'ionic-angular';
@@ -15,14 +15,14 @@ import { AlertController } from 'ionic-angular';
 @Injectable()
 export class DialogInputServiceProvider {
 
-  constructor(public http: HttpClient, public AlertCtrl: AlertController, public dataService: GameServiceProvider,) {
+  constructor( public AlertCtrl: AlertController, public dataService: GameServiceProvider,) {
     console.log('Hello DialogInputServiceProvider Provider');
   }
 
 
   showPrompt(item?, index?) {
     const alert = this.AlertCtrl.create({
-      title: item ? 'Edit Item' : "Add Item",
+      title: item ? 'Edit Item' : "Add Game & Status",
       message: item ? "Please edit item" : "Please enter item...",
       inputs: [
         {

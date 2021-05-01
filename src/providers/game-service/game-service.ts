@@ -25,7 +25,7 @@ export class GameServiceProvider {
 
 
 
-  constructor(public http: HttpClient) {
+  constructor() {
     console.log('Hello GameServiceProvider Provider');
   }
 

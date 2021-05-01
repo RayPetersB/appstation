@@ -50,6 +50,11 @@ $colors: (
 }
 
 
+h2.welcome{
+  color:map-get($colors,"danger");
+  background-color: map-get($colors,"primary"); }
+
+
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here

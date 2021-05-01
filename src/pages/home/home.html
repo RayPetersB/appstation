@@ -14,15 +14,15 @@
 
 
 
-  <p text-center>
+  <h4 text-center class="welcome">
     This App lets you create a list of games you have played or are currently playing and share to your self or with
     your friends - Sometimes it can be hard to keep up with all the errands of life.
-  </p>
+  </h4>
 
   <ion-list>
 
 
-    <ion-item-sliding *ngFor="let item of loaditems(); let i = index">
+    <ion-item-sliding *ngFor="let item of loadItems(); let i = index">
       <ion-item>
         <h2>{{item.name}}</h2>
         <p>{{item.status}}</p>

@@ -3,8 +3,13 @@ page-home {
     h2.welcome{
         color:map-get($colors,"danger");
         background-color: map-get($colors,"primary"); 
+
+
+        h4.welcome{
+            color:map-get($colors,"danger");
+            background-color: map-get($colors,"primary");     
     }
 
 
 
-}
+}}

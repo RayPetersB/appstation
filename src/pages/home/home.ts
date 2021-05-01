@@ -31,7 +31,7 @@ export class HomePage {
   }
 
   loadItems() {
-    return this.dataService.items;
+    return this.dataService.getItems();
   }
 
 

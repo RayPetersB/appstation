@@ -1,65 +1,24 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Some of the Greatest Play Station Hits
-    </ion-title>
+    <!-- <ion-title>{{title}}</ion-title> -->
+    <!-- adding "title" to consolidate -->
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <h2 text-center class="welcome"> Appstation </h2>
+  <!-- Center Logo by creating class and theming in css file and using ion icon  -->
+  <ion-icon class="psLogo" name="logo-playstation"></ion-icon>
 
-
-  <ion-list>
-    <ion-item-sliding For = "let item of loadItems(); let i = index">
-      <ion-item>
-        <h2>{{item?.name}}</h2>
-
-        <p>{{item?.quantity}}</p>
-      </ion-item>
-      
-      <ion-item-options>
-
-        <button (click)="removeItem(item, i)" ion-button color="secondary" icon-start>
-          <ion-icon name="trash"></ion-icon>
-          Done
-        </button>
-
-        <button (click)="editItem(item, i)" ion-button color="primary" icon-start>
-          <ion-icon name="create"></ion-icon>
-          Edit
-        </button>
-
-
-        <button (click)="shareItem(item, i)" ion-button color="light" icon-start>
-          <ion-icon name="md-share"></ion-icon>
-          Share
-        </button>
-
-
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+  <h2 text-center="welcome"> Welcome to App Station! </h2>
 
 
 
-  <ion-fab bottom right>
-    <button (click)="addItem()" ion-fab mini>
-      <ion-icon name="add"></ion-icon>
-    </button>
-  </ion-fab>
+  <h4 text-center>
+    Sometimes life gets away from you and you end up working too hard, bad things happen, work,school, family kids & friend obligations. 
+  </h4>
+  
+  <h4 text-center>
+    Sometimes its ok to take a break and play a game and when you do, be sure to pick up where you left off using "Appstation".
 
-</ion-content>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </h4>
